@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "Aura Fixer",
+	"version": "1.0",
+	"description": "Replaces semicolons with periods for Aura's fixes.",
+	"content_scripts": 
+	[
+		{
+			"matches": ["https://sites.google.com/site/auracannedspeeches/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
+
